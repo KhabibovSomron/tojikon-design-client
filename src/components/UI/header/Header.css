@@ -1,0 +1,74 @@
+@import url("../../theme-variables.css");
+
+header {
+    outline: 1px solid red;
+    font-family: 'Open Sans', sans-serif;
+}
+
+.container {
+    max-width: var(--containerWidth);
+    margin: 0 auto;
+    height: 100px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.logo {
+    display: flex;
+    align-items: center;
+}
+
+.logo_icon {
+    font-size: 21px;
+    color: var(--textColor);
+    border: 3px solid var(--textColor);
+    padding: 10px;
+    font-weight: 800;
+    margin: 0 15px;
+}
+
+.logo_icon:hover {
+    cursor: pointer;
+}
+
+.logo_text {
+    font-size: 21px;
+    font-weight: 700;
+    color: var(--textColor);
+    margin: 0 15px;
+}
+ 
+.logo_text:hover {
+    cursor: pointer;
+}
+
+
+.links {
+    display: flex;
+    justify-content: space-between;
+    width: 40%;
+    margin-right: 15px;
+}
+
+.link {
+    color: var(--secondaryTextColor);
+    text-decoration: none;
+    font-weight: 700;
+    font-size: 14px;
+    transition: all 0.4s;
+}
+
+.link:hover {
+    color: var(--textColor);
+}
+
+@media screen and (max-width: 580px) {
+    .links {
+        display: none;
+    }
+
+    .container {
+        justify-content: flex-start;
+    }
+}

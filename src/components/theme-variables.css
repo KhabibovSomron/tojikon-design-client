@@ -1,0 +1,5 @@
+:root {
+    --textColor: rgba(149,123,95, 1);
+    --secondaryTextColor: #808080;
+    --containerWidth: 900px;
+}

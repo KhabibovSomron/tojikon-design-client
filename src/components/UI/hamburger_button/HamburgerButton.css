@@ -1,0 +1,44 @@
+@import url("../../theme-variables.css");
+
+.hamburger {
+    display: none;
+}
+
+@media screen and (max-width:580px) {
+    .hamburger_container {
+        position: absolute;
+        right: 0;
+        top: 10px;
+        max-width: 22px;
+        height: 20px;
+        margin: 30px 28px;
+    }
+    .hamburger {
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+    }
+
+    .hamburger_layouts {
+        width: 22px;
+        max-height: 2px;
+        height: 2px;
+        background-color: var(--secondaryTextColor);
+    }
+
+
+    .hamburger_layouts.clicked:first-child {
+        transform: translate(0, 9px) rotate(-45deg);
+        transition: ease-out 0.5s;
+    }
+
+    .hamburger_layouts.clicked:nth-child(2) {
+        opacity: 0;
+    }
+
+    .hamburger_layouts.clicked:last-child {
+        transform: translate(0, -9px) rotate(45deg);
+        transition: ease-out 0.5s;
+    }
+
+}

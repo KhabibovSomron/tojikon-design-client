@@ -1,5 +1,6 @@
 import { FC } from 'react'
-
+import Header from './UI/header/Header'
+import HamburgerButton from './UI/hamburger_button/HamburgerButton';
 
 interface ILayoutProps {
 
@@ -7,8 +8,9 @@ interface ILayoutProps {
 
 const Layout: FC<ILayoutProps> = () => {
     return (
-        <div className="main">
-            <h1>Layout</h1>
+        <div className="main" >
+            <Header />
+            <HamburgerButton />
         </div>
     )
 }
