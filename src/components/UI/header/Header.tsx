@@ -1,5 +1,6 @@
 import { FC } from "react";
 import "./Header.css";
+import { Link } from "react-router-dom";
 
 interface IHeaderProps {
 
@@ -15,9 +16,9 @@ const Header: FC<IHeaderProps> = () => {
                 </div>
 
                 <div className="links">
-                    <a className="link" href="/">ГЛАВНАЯ</a>
-                    <a className="link" href="/">ПОРТФОЛИО</a>
-                    <a className="link" href="/">О НАС</a>
+                    <Link to='/' className="link">ГЛАВНАЯ</Link>
+                    <Link to='/portfolio/' className="link">ПОРТФОЛИО</Link>
+                    <Link to='/about-us/' className="link">О НАС</Link>
                 </div>
             </div>
         </header>

@@ -3,12 +3,12 @@ import './HamburgerButton.css'
 
 
 interface IHamburgerButtonProps {
-
+    isClicked: boolean,
+    setIsClicked: Function
 }
 
-const HamburgerButton: FC<IHamburgerButtonProps> = () => {
+const HamburgerButton: FC<IHamburgerButtonProps> = ({isClicked, setIsClicked}) => {
 
-    const [isClicked, setIsClicked] = useState<boolean>(false)
 
     const updateMenu = () => {
         isClicked ? setIsClicked(false) : setIsClicked(true)

@@ -1,0 +1,51 @@
+@import url("../../theme-variables.css");
+
+.navigation {
+    display: none;
+}
+
+@media screen and (max-width:580px) {
+    .navigation {
+        width: 100vw;
+        height: 100vh;
+        background-color: var(--navigationBackgroundColor);
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        padding-top: 100px;
+        position: absolute;
+        top: 0;
+        z-index: 1;
+        margin: 0 auto;
+    }
+
+    .navigation.clicked {
+        transform: translateX(0);
+        transition: ease-out 0.5s;
+    }
+
+    .navigation.unclicked {
+        transform: translateX(100%);
+        transition: ease-out 0.5s;
+    }
+
+    .navigation_item {
+        height: 45px;
+        width: 70%;
+        border-bottom: 1px solid white;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+
+    .navigation_link {
+        font-size: 16px;
+        color: black;
+        text-decoration: none;
+        
+    }
+
+    .active {
+        color: white;
+    }
+}

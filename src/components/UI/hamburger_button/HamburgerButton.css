@@ -12,6 +12,7 @@
         max-width: 22px;
         height: 20px;
         margin: 30px 28px;
+        z-index: 2;
     }
     .hamburger {
         display: flex;
@@ -30,6 +31,7 @@
     .hamburger_layouts.clicked:first-child {
         transform: translate(0, 9px) rotate(-45deg);
         transition: ease-out 0.5s;
+        background-color: white;
     }
 
     .hamburger_layouts.clicked:nth-child(2) {
@@ -38,6 +40,22 @@
 
     .hamburger_layouts.clicked:last-child {
         transform: translate(0, -9px) rotate(45deg);
+        transition: ease-out 0.5s;
+        background-color: white;
+    }
+
+    .hamburger_layouts.unclicked:first-child {
+        transform: translate(0, 0) rotate(0);
+        transition: ease-out 0.5s;
+    }
+
+    .hamburger_layouts.unclicked:nth-child(2) {
+        opacity: 1;
+        transition: ease-out 0.5s;
+    }
+
+    .hamburger_layouts.unclicked:last-child {
+        transform: translate(0, 0) rotate(0);
         transition: ease-out 0.5s;
     }
 
