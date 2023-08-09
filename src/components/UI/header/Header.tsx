@@ -15,11 +15,11 @@ const Header: FC<IHeaderProps> = () => {
                     <div className="logo_text">TOJIKON DESIGN</div>
                 </div>
 
-                <div className="links">
+                <nav className="links">
                     <Link to='/' className="link">ГЛАВНАЯ</Link>
                     <Link to='/portfolio/' className="link">ПОРТФОЛИО</Link>
                     <Link to='/about-us/' className="link">О НАС</Link>
-                </div>
+                </nav>
             </div>
         </header>
     )

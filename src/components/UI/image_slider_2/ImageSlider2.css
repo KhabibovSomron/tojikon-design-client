@@ -1,0 +1,63 @@
+
+.slider {
+  position: relative;
+  display: flex;
+  justify-content: center;
+}
+.carousel {
+  width: 100vw;
+  height: 80vh;
+  overflow-x: scroll;
+  overflow-y: hidden;
+  scroll-snap-type: x mandatory;
+  position: relative;
+}
+
+.carousel::-webkit-scrollbar {
+  display: none;
+}
+
+/* Hide scrollbar for IE, Edge and Firefox */
+.carousel {
+  -ms-overflow-style: none;  /* IE and Edge */
+  scrollbar-width: none;  /* Firefox */
+}
+
+.slides {
+  position: absolute;
+  display: flex;
+  animation: slider 26s infinite;
+}
+
+@keyframes slider {
+  0%, 25%, 100%{left: 0}
+  
+  30%, 45%{left: -100%}
+  
+  50%, 65%{left: -200%}
+
+  70%, 85%{left: -300%}
+}
+
+
+.slide {
+  width: 100vw;
+  height: 80vh;
+  object-fit: cover;
+  object-position: center;
+  scroll-snap-align: start;
+
+}
+
+.slide-skeleton {
+  width: 100vw;
+  height: 80vh;
+}
+
+.black-layer {
+  width: 100vw;
+  height: 80vh;
+  position: absolute;
+  background-color: black;
+  opacity: 0.5;
+}

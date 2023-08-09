@@ -16,7 +16,7 @@ const Navigation: FC<INavigationProps> = ({isClicked, setIsClicked}) => {
     }
 
     return (
-        <div className={`navigation ${isClicked ? 'clicked' : 'unclicked'}`}>
+        <nav className={`navigation ${isClicked ? 'clicked' : 'unclicked'}`}>
             <div className="navigation_item">
                 <Link className="navigation_link" to='/' onClick={onLinkClicked}>ГЛАВНАЯ</Link>
             </div>
@@ -26,7 +26,7 @@ const Navigation: FC<INavigationProps> = ({isClicked, setIsClicked}) => {
             <div className="navigation_item">
                 <Link className="navigation_link" to='/about-us/' onClick={onLinkClicked}>О НАС</Link>
             </div>
-        </div>
+        </nav>
     )
 }
 

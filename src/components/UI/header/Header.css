@@ -1,9 +1,5 @@
 @import url("../../theme-variables.css");
 
-header {
-    outline: 1px solid red;
-}
-
 .container {
     max-width: var(--containerWidth);
     margin: 0 auto;

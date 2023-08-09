@@ -1,0 +1,7 @@
+.slide-skeleton {
+  width: 100vw;
+  height: 80vh;
+  scroll-snap-align: start;
+  color: black;
+}
+
