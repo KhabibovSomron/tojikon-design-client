@@ -4,6 +4,7 @@ import Header from './UI/header/Header'
 import HamburgerButton from './UI/hamburger_button/HamburgerButton';
 import Navigation from './UI/navigation/Navigation'
 import { SkeletonTheme } from 'react-loading-skeleton';
+import Footer from './UI/footer/Footer';
 interface ILayoutProps {
 
 }
@@ -22,6 +23,7 @@ const Layout: FC<ILayoutProps> = () => {
                     <Outlet />
                 </SkeletonTheme>
             </Suspense>
+            <Footer />
         </div>
     )
 }
