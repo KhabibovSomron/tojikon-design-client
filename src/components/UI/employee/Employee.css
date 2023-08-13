@@ -1,0 +1,48 @@
+@import url('../../theme-variables.css');
+
+.employee {
+    display: flex;
+    margin-bottom: 50px;
+}
+
+.employee__image {
+    width: 298px;
+    height: 263px;
+    object-fit: cover;
+    margin-right: 50px;
+}
+
+.employee__description {
+    display: flex;
+    flex-direction: column;
+    color: #D5D5D5;
+    font-size: 15px;
+    width: 50%;
+    height: 100%;
+}
+
+.employee__specialization {
+    letter-spacing: 0.25em;
+    line-height: 1.25em;
+    font-weight: 500;
+    margin: 20px 0 20px 0;
+}
+
+.employee__name {
+    font-size: 30px;
+    font-weight: 800;
+    color: var(--textColor);
+    margin-bottom: 20px;
+}
+
+.employee__about {
+    max-height: 100px;
+    overflow: hidden;
+}
+
+.employee__email {
+    bottom: 0;
+    margin: 20px 0;
+    text-decoration: none;
+    color: inherit;
+}

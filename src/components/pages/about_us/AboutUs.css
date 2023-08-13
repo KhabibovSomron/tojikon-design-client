@@ -1,0 +1,32 @@
+@import url('../../theme-variables.css');
+
+.about-us__container {
+    max-width: var(--containerWidth);
+    margin: 0 auto;
+    padding: 110px 0;
+}
+
+.about-us__company-information {
+    display: flex;
+    color: #D5D5D5;
+    margin-bottom: 80px;
+}
+
+.company-information__name {
+    font-size: 24px;
+    letter-spacing: 0.2em;
+    font-weight: 600;
+    max-width: 40%;
+}
+
+.about-us__company-information > div {
+    max-width: 60%;
+    display: flex;
+    flex-direction: column;
+}
+
+.company-information__description {
+    font-size: 15px;
+    width: 100%;
+    margin-top: 20px;
+}

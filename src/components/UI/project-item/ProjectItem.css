@@ -1,0 +1,29 @@
+
+.project-item {
+    position: relative;
+}
+
+.project-item__image {
+    width: 100%;
+    height: 650px;
+    object-fit: cover;
+}
+
+.project-item__layer {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    background-color: #2b2b2b7e;
+    z-index: 16;
+    top: 0;
+    justify-content: center;
+    align-items: center;
+    transition: display .3s;
+}
+
+.project-item__layer > span {
+    color: white;
+    font-size: 130px;
+    font-weight: 800;
+    letter-spacing: 0.1em;
+}

@@ -15,6 +15,7 @@
 }
 
 h3 {
+    margin: 0;
     font-weight: 600;
     font-size: 15px;
     letter-spacing: .2em;
