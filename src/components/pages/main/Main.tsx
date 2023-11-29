@@ -3,6 +3,7 @@ import { IImage } from '../../../redux/Types';
 import './Main.css'
 import LazyImage from '../../UI/lazy-image/LazyImage';
 import ImageCarousel from '../../UI/carousel/ImageCarousel';
+import { Link } from 'react-router-dom';
 
 interface IMainProps {
 
@@ -34,6 +35,7 @@ const Main: FC<IMainProps> = () => {
             <div className="main__container">
                 <h1>ИЗБРАННЫЕ ПРОЕКТЫ</h1>
                 <div className="selected-projects">
+              
                     <div className="selected-projects__item">
                         
                         <LazyImage src={images[0].image} skeletonClassName='selected-projects__image-skeleton' className='selected-projects__image' alt={`Project image #${images[0].id}`}/>
@@ -42,10 +44,10 @@ const Main: FC<IMainProps> = () => {
                             <span className="info__date">02/35</span>
                             <h2 className="info__title">ПРОЕКТ 2, ПЕТЕРБУРГ</h2>
                             <span className="info__description">Lorem, ipsum dolor sit amet consectetur adipisicing elit. Corporis aspernatur, placeat culpa recusandae odio facilis illum autem nesciunt laborum, sequi nulla commodi, omnis dolore excepturi labore earum reprehenderit numquam similique.</span>
-                            <a href="#" className="info__link">Смотреть</a>
+                            <Link to={`/project/1/`} className="info__link">Смотреть</Link>
                         </div>
                     </div>
-
+            
                     <div className="selected-projects__item">
                         
                         <LazyImage src={images[0].image} skeletonClassName='selected-projects__image-skeleton' className='selected-projects__image' alt={`Project image #${images[0].id}`}/>
@@ -54,10 +56,10 @@ const Main: FC<IMainProps> = () => {
                             <span className="info__date">02/35</span>
                             <h2 className="info__title">ПРОЕКТ 2, ПЕТЕРБУРГ</h2>
                             <span className="info__description">Lorem, ipsum dolor sit amet consectetur adipisicing elit. Corporis aspernatur, placeat culpa recusandae odio facilis illum autem nesciunt laborum, sequi nulla commodi, omnis dolore excepturi labore earum reprehenderit numquam similique.</span>
-                            <a href="#" className="info__link">Смотреть</a>
+                            <Link to={`/project/2/`} className="info__link">Смотреть</Link>
                         </div>
                     </div>
-
+          
                     <div className="selected-projects__item">
                         
                         <LazyImage src={images[0].image} skeletonClassName='selected-projects__image-skeleton' className='selected-projects__image' alt={`Project image #${images[0].id}`}/>
@@ -66,10 +68,10 @@ const Main: FC<IMainProps> = () => {
                             <span className="info__date">02/35</span>
                             <h2 className="info__title">ПРОЕКТ 2, ПЕТЕРБУРГ</h2>
                             <span className="info__description">Lorem, ipsum dolor sit amet consectetur adipisicing elit.</span>
-                            <a href="#" className="info__link">Смотреть</a>
+                            <Link to={`/project/3/`} className="info__link">Смотреть</Link>
                         </div>
                     </div>
-
+                
                 </div>
             </div>
         </div>

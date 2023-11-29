@@ -1,13 +1,15 @@
 import { FC, useState } from 'react'
 import './ProjectItem.css'
 import LazyImage from '../lazy-image/LazyImage'
+import { Link } from 'react-router-dom'
 
 interface IProjectImageProps {
     image: string,
-    index: number
+    index: number,
+    id: number
 }
 
-const ProjectItem: FC<IProjectImageProps> = ({image, index}) => {
+const ProjectItem: FC<IProjectImageProps> = ({image, index, id}) => {
 
     const [isProjectHover, setIsProjectHover] = useState<boolean>(false)
 
@@ -19,13 +21,15 @@ const ProjectItem: FC<IProjectImageProps> = ({image, index}) => {
     }
 
     return (
-        <div className="project-item" onMouseEnter={onMouseEnterHandler} onMouseLeave={onMouseLeaveHandler}>
-            <LazyImage className='project-item__image' alt='Постер проекта' skeletonClassName='project-item__image-skeleton' src={image}/>
+        <Link to={`/project/${id}/`} className='project-item__link'>
+            <div className="project-item" onMouseEnter={onMouseEnterHandler} onMouseLeave={onMouseLeaveHandler}>
+                <LazyImage className='project-item__image' alt='Постер проекта' skeletonClassName='project-item__image-skeleton' src={image}/>
 
-            <div className="project-item__layer" style={isProjectHover ? {display: 'flex'}: {display: 'none'}}>
-                <span>{index % 10 === 0 ? index: `0${index}`}</span>
+                <div className="project-item__layer" style={isProjectHover ? {display: 'flex'}: {display: 'none'}}>
+                    <span>{index % 10 === 0 ? index: `0${index}`}</span>
+                </div>
             </div>
-        </div>
+        </Link>
     )
 } 
 

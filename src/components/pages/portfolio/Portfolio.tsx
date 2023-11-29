@@ -1,7 +1,6 @@
-import { FC, useState } from 'react'
+import { FC } from 'react'
 import './Portfolio.css'
 import { IImage } from '../../../redux/Types'
-import LazyImage from '../../UI/lazy-image/LazyImage'
 import ProjectItem from '../../UI/project-item/ProjectItem'
 
 interface IPortfolioProps {
@@ -34,9 +33,9 @@ const Portfolio: FC<IPortfolioProps> = () => {
             <div className="portfolio__container">
                 <h1>ПРОЕКТЫ</h1>
                 <div className="portfolio__projects">
-                    <ProjectItem image={images[0].image} index={1} />
-                    <ProjectItem image={images[0].image} index={2} />
-                    <ProjectItem image={images[0].image} index={3} />
+                    <ProjectItem image={images[0].image} index={1} id={images[0].id} />
+                    <ProjectItem image={images[1].image} index={2} id={images[1].id}/>
+                    <ProjectItem image={images[2].image} index={3} id={images[2].id}/>
                 </div>
             </div>
         </div>

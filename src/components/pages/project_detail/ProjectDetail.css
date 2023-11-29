@@ -1,0 +1,65 @@
+@import url('../../theme-variables.css');
+
+.project-detail {
+    max-width: var(--containerWidth);
+    width: 100%;
+    color: #D5D5D5;
+    margin: 0 auto;
+    padding: 100px 0 200px;
+}
+
+.project_description {
+    margin-top: 50px;
+    display: flex;
+    justify-content: space-between;
+}
+
+.project_title {
+    font-size: 28px;
+    letter-spacing: 0.2em;
+    font-weight: 800;
+    color: var(--textColor);
+    margin: 20px 0;
+}
+
+.description_header {
+    width: 30%;
+}
+
+.description_info {
+    width: 60%;
+}
+
+.project_type, .project_date {
+    letter-spacing: 0.2em;
+}
+
+.project_type {
+    font-size: 20px;
+    margin-bottom: 20px;
+}
+
+.project_date, .project_link, .description_info {
+    font-size: 15px;
+}
+
+.project_date {
+    margin: 20px 0 50px;
+    display: flex;
+    justify-content: space-between;
+}
+
+.project_link {
+    color: #D5D5D5;
+    text-decoration: none;
+    transition: color .3s;
+}
+
+.project_link::before {
+    content: '< ';
+}
+
+.project_link:hover {
+    cursor: pointer;
+    color: var(--textColor);
+}
